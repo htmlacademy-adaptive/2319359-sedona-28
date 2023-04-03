@@ -19,98 +19,88 @@
         </button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
-              Главная
-            </a>
+            <a class="main-navigation__link" href="#" aria-current="page">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
-              Фото и видео
-            </a>
+            <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
+            <a class="main-navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
+            <a class="main-navigation__link" href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
       <section class="intro intro--inner">
-        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <div class="intro__image-wrapper">
           <img src="#" width="229" height="39" alt="Sedona">
         </div>
       </section>
-
       <section class="gallery">
-        <h2 class="gallery__title">Фото и видео</h2>
+        <h1 class="gallery__title">Фото и видео</h1>
         <p class="gallery__text"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
         <ul class="gallery__list">
-          <li class="gallery__item">
-            <div class="gallery__content-photo"></div>
-            <div class="gallery__content">
-              <p class="gallery__name">неродные просторы</p>
-              <p class="gallery__author">Автор фото: Борис</p>
-              <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">1350</span>
-              </div>
+          <li class="gallery__item gallery-item">
+            <a class="gallery-item__link" href="#">
+              <h2 class="gallery-item__title">Неродные просторы</h2>
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Non-native spaces">
+            </a>
+            <p class="gallery-item__description">Автор фото: Борис</p>
+            <div class="gallery__like">
+              <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
+              <span class="gallery__like-sum">1350</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <div class="gallery__content-photo"></div>
-            <div class="gallery__content">
-              <p class="gallery__name">Местная растительность</p>
-              <p class="gallery__author">Автор фото: Сергей</p>
-              <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">143</span>
-              </div>
+          <li class="gallery__item gallery-item">
+            <a class="gallery-item__link" href="#">
+              <h2 class="gallery-item__title">Местная растительность</h2>
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Local vegetation">
+            </a>
+            <p class="gallery-item__description">Автор фото: Сергей</p>
+            <div class="gallery__like">
+              <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
+              <span class="gallery__like-sum">143</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <div class="gallery__content-photo"></div>
-            <div class="gallery__content">
-              <p class="gallery__name">Дорога на север</p>
-              <p class="gallery__author">Автор фото: Петр</p>
-              <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">96</span>
-              </div>
+          <li class="gallery__item gallery-item">
+            <a class="gallery-item__link" href="#">
+              <h2 class="gallery-item__title">Дорога на север</h2>
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Road to the north">
+            </a>
+            <p class="gallery-item__description">Автор фото: Петр</p>
+            <div class="gallery__like">
+              <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
+              <span class="gallery__like-sum">96</span>
             </div>
           </li>
-          <li class="gallery__item">
-            <div class="gallery__content-photo"></div>
-            <div class="gallery__content">
-              <p class="gallery__name">Мост дьявола</p>
-              <p class="gallery__author">Автор фото: Антон</p>
-              <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">254</span>
-              </div>
+          <li class="gallery__item gallery-item">
+            <a class="gallery-item__link" href="#">
+              <h2 class="gallery-item__title">Мост дьявола</h2>
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Devils-bridge">
+            </a>
+            <p class="gallery-item__description">Автор фото: Антон</p>
+            <div class="gallery__like">
+              <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
+              <span class="gallery__like-sum">254</span>
             </div>
           </li>
         </ul>
         <div class="presentation">
-          <p class="presentation__title">Все еще сомневаетесь?</p>
+          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
           <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
+          <img class="presentation__video" src="#" width="280" height="177" alt="Видеопрезентация Седона"></img>
+          <button class="presentation__button" type="button">
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <p class="main-footer__hashtag">
-        #visitsedona
-      </p>
-      <ul class="social-list">
+      <a class="main-footer__link" href="#">#visitsedona</a>
+      <ul class="main-footer__social-list social-list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">Мы в Твиттерe</a>
         </li>
