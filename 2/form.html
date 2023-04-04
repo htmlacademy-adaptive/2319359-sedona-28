@@ -34,10 +34,8 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="intro intro--inner">
-        <div class="intro__image-wrapper">
-          <img src="#" width="229" height="39" alt="Sedona">
-        </div>
+      <div class="intro__image-wrapper">
+        <img src="#" width="229" height="39" alt="Sedona">
       </div>
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
@@ -50,13 +48,13 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-group introduce">
             <legend class="form-group__title">Представьтесь:</legend>
-            <label class="name text-format">Имя* :
+            <label class="name text-format">Имя*:
               <input class="name-input" type="text" placeholder="Петр" required>
             </label>
-            <label class="surname text-format">Фамилия* :
+            <label class="surname text-format">Фамилия*:
               <input class="surname-input" type="text" placeholder="Пустота" required>
             </label>
-            <label class="middle-name text-format">Отчество :
+            <label class="middle-name text-format">Отчество:
               <input class="middle-name-input" type="text" placeholder="Викторович">
             </label>
           </fieldset>
@@ -101,8 +99,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-group sightseeing">
-            <legend class="form-group__title sightseeing__title">посещенные достопримечательности:</legend>
+          <div class="form-group sightseeing">
+            <label class="form-group__title sightseeing__title">Посещенные достопримечательности:</label>
             <ul class="form-group-list reset-list">
               <li class="form__sightseeing-item">
                 <label class="control">
@@ -133,13 +131,13 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <fieldset class="form-group emotion">
             <legend class="form-group__title">Опишите свои эмоции:</legend>
             <textarea>Опишите подробно все свои восторги</textarea>
           </fieldset>
           <div class="button-feedback">
-            <input type="submit" name="button" value="Отправить отзыв">
+            <button type="submit">Отправить отзыв</button>
             <small class="review__legend">* — обязательные поля</small>
           </div>
         </form>
