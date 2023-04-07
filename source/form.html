@@ -102,7 +102,7 @@
           <div class="form-group sightseeing">
             <label class="form-group__title sightseeing__title">Посещенные достопримечательности:</label>
             <ul class="form-group-list reset-list">
-              <li class="form__sightseeing-item">
+              <li class="form__sightseeing-item sightseeing-item__bridge">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Devils-bridge" checked>
                   <span class="control-checkbox"></span>
@@ -134,10 +134,12 @@
           </div>
           <fieldset class="form-group emotion">
             <legend class="form-group__title">Опишите свои эмоции:</legend>
-            <textarea>Опишите подробно все свои восторги</textarea>
+            <label class="form-group__field">
+              <textarea class="emotion__text" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
           <div class="button-feedback">
-            <button type="submit">Отправить отзыв</button>
+            <button class="button-feedback__background" type="submit">Отправить отзыв</button>
             <small class="review__legend">* — обязательные поля</small>
           </div>
         </form>

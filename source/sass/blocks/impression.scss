@@ -1,0 +1,39 @@
+.form__impression-item {
+  height: 46px;
+  align-items: center;
+  display: flex;
+  padding-bottom: 26px;
+}
+
+.control {
+  position: relative;
+  padding-left: 62px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: -10px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  line-height: 26px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+}

@@ -1,0 +1,19 @@
+.phone-input,
+.e-mail-input {
+  width: 280px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.phone-input::placeholder,
+.e-mail-input::placeholder {
+  line-height: 26px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+  opacity: 30%;
+}

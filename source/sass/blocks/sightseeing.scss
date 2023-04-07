@@ -1,0 +1,24 @@
+.sightseeing-item__bridge {
+  padding-top: 30px;
+}
+
+.form__sightseeing-item {
+  height: 46px;
+  padding-bottom: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.form__sightseeing-item:last-child {
+  padding-bottom: 0;
+}
+
+.control-checkbox {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  top: -10px;
+}
