@@ -4,43 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page-container">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="#" width="185" height="96" alt="Седона">
+      <a class="main-header__link">
+        <img class="main-header__logo" src="#" width="185" height="96" alt="Седона">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="main-navigation__link" href="#" aria-current="page">Главная</a>
+        <ul class="main-navigation__list site-list reset-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#" aria-current="page">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru">Html Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
-      <div class="intro__image-wrapper">
+      <div class="intro-inner">
         <img src="#" width="229" height="39" alt="Sedona">
       </div>
       <section class="gallery">
         <h1 class="gallery__title">Фото и видео</h1>
         <p class="gallery__text"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
-        <ul class="gallery__list">
+        <ul class="gallery__list reset-list">
           <li class="gallery__item gallery-item">
             <h2 class="gallery-item__title">Неродные просторы</h2>
             <a class="gallery-item__link" href="#">
@@ -97,7 +98,7 @@
     </main>
     <footer class="main-footer">
       <a class="main-footer__link" href="#">#visitsedona</a>
-      <ul class="main-footer__social-list social-list">
+      <ul class="main-footer__social-list social-list reset-list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">Мы в Твиттерe</a>
         </li>
