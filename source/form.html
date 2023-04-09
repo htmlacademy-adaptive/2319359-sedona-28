@@ -44,45 +44,45 @@
       <section class="form">
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__group">
-            <p class="form__group-title">Представьтесь:</p>
-            <label class="form__group-label">Имя*:
-              <input class="form__group-input name-input" type="text" placeholder="Петр" required>
+          <div class="form-group">
+            <p class="form-group__title">Представьтесь:</p>
+            <label class="form-group__label">Имя*:
+              <input class="form-group__input" type="text" placeholder="Петр" required>
             </label>
-            <label class="form__group-label">Фамилия*:
-              <input class="form__group-input surname-input" type="text" placeholder="Пустота" required>
+            <label class="form-group__label">Фамилия*:
+              <input class="form-group__input" type="text" placeholder="Пустота" required>
             </label>
-            <label class="form__group-label">Отчество:
-              <input class="form__group-input middle-name-input" type="text" placeholder="Викторович">
+            <label class="form-group__label">Отчество:
+              <input class="form-group__input" type="text" placeholder="Викторович">
             </label>
           </div>
-          <div class="form__group">
-            <p class="form__group__title">Контактная информация:</p>
-              <label class="form__group-label">Контактный телефон*:
-                <input class="form__group-input phone-input" type="tel" placeholder="Введите телефон" required>
+          <div class="form-group">
+            <p class="form-group__title">Контактная информация:</p>
+              <label class="form-group__label">Контактный телефон*:
+                <input class="form-group__input contacts-input" type="tel" placeholder="Введите телефон" required>
               </label>
-              <label class="form__group-label">Электронная почта*:
-                <input class="form__group-input e-mail-input" type="email" placeholder="Введите e-mail" required>
+              <label class="form-group__label">Электронная почта*:
+                <input class="form-group__input contacts-input" type="email" placeholder="Введите e-mail" required>
               </label>
           </div>
-          <div class="form__group impression">
-            <p class="form__group-title">Ваше общее впечатление:</p>
-            <ul class="form__group-list form-list">
-              <li class="form__impression-item">
+          <div class="form-group">
+            <p class="form-group__title">Ваше общее впечатление:</p>
+            <ul class="form-group__list form-list">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="impression" value="positive" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Скорее положительное</span>
                 </label>
               </li>
-              <li class="form__impression-item">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="impression" value="negative">
                   <span class="control-mark"></span>
                   <span class="control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="form__impression-item">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="impression" value="no-answer">
                   <span class="control-mark"></span>
@@ -91,31 +91,31 @@
               </li>
             </ul>
           </div>
-          <div class="form__group sightseeing">
-            <p class="form__group-title sightseeing__title">Посещенные достопримечательности:</p>
-            <ul class="form-group-list form-list">
-              <li class="form__sightseeing-item sightseeing-item__bridge">
+          <div class="form-group">
+            <p class="form-group__title">Посещенные достопримечательности:</p>
+            <ul class="form-group__list form-list">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Devils-bridge" checked>
                   <span class="control-checkbox"></span>
                   <span class="control-label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="form__sightseeing-item">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Bell-mountain" checked>
                   <span class="control-checkbox"></span>
                   <span class="control-label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="form__sightseeing-item">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Slide-park" checked>
                   <span class="control-checkbox"></span>
                   <span class="control-label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="form__sightseeing-item">
+              <li class="form-group__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Red-rocks">
                   <span class="control-checkbox"></span>
@@ -124,22 +124,22 @@
               </li>
             </ul>
           </div>
-          <div class="form__group emotion">
-            <p class="form__group-title">Опишите свои эмоции:</p>
+          <div class="form-group">
+            <p class="form-group__title">Опишите свои эмоции:</p>
             <label class="form-group__field">
-              <textarea class="emotion__text" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form-group__text" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </div>
-          <div class="button-feedback">
-            <button class="button-feedback__background" type="submit">Отправить отзыв</button>
-            <small class="review__legend">* — обязательные поля</small>
+          <div class="form-group form-button">
+            <button class="form-button__feedback" type="submit">Отправить отзыв</button>
+            <small class="form-button____text">* — обязательные поля</small>
           </div>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer__link" href="#">#visitsedona</a>
-      <ul class="main-footer__social-list social-list reset-list">
+      <ul class="main-footer__social-list social-list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">Мы в Твиттерe</a>
         </li>

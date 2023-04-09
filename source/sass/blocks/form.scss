@@ -1,12 +1,12 @@
 .form {
-  padding: 24px 20px 22px;
+  padding: 24px 20px 0;
 }
 
 .form-list {
   @include reset;
 }
 
-.form__group {
+.form-group {
   margin: 0;
   padding: 0;
   border: none;
@@ -15,7 +15,7 @@
   padding-bottom: 39px;
 }
 
-.form__group-title {
+.form-group__title {
   line-height: 26px;
   font-size: 18px;
   text-align: center;
@@ -25,13 +25,13 @@
   font-weight: 700;
 }
 
-.form__group-label {
+.form-group__label {
   text-transform: uppercase;
   margin: 0;
   padding-left: 16px;
 }
 
-.form__group-input {
+.form-group__input {
   width: 280px;
   height: 58px;
   background-color: #f2f2f2;
@@ -39,6 +39,7 @@
   margin-bottom: 16px;
   padding: 16px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &::placeholder {
     line-height: 26px;
@@ -48,32 +49,15 @@
   }
 }
 
-.emotion {
-  padding-bottom: 56px;
+.contacts-input {
+  opacity: 30%;
 }
 
-.emotion__text {
-  min-width: 279px;
-  min-height: 150px;
-  background-color: #f2f2f2;
-  padding: 16px;
-  border: none;
-
-  &::placeholder {
-    font-weight: 700;
-    line-height: 26px;
-    font-size: 18px;
-    color: #000000;
-    opacity: 30%;
-    font-family: "PT Sans", sans-serif;
-  }
-}
-
-.form__impression-item {
+.form-group__item {
   height: 46px;
   align-items: center;
   display: flex;
-  padding-bottom: 26px;
+  padding-bottom: 16px;
 }
 
 .control {
@@ -109,21 +93,6 @@
   font-weight: 700;
 }
 
-.sightseeing-item__bridge {
-  padding-top: 30px;
-}
-
-.form__sightseeing-item {
-  height: 46px;
-  padding-bottom: 16px;
-  align-items: center;
-  display: flex;
-}
-
-.form__sightseeing-item:last-child {
-  padding-bottom: 0;
-}
-
 .control-checkbox {
   position: absolute;
   left: 0;
@@ -132,4 +101,43 @@
   background: #f2f2f2;
   border-radius: 5px;
   top: -10px;
+}
+
+.form-group__text {
+  min-width: 279px;
+  min-height: 150px;
+  background-color: #f2f2f2;
+  border: none;
+
+  &::placeholder {
+    padding: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 18px;
+    color: #000000;
+    opacity: 30%;
+    font-family: "PT Sans", sans-serif;
+  }
+}
+
+.form-button__feedback {
+  font-family: "PT Sans", sans-serif;
+  background-color: #81b3d2;
+  color: #ffffff;
+  width: 280px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.form-button____text {
+  padding-top: 3px;
+  text-transform: uppercase;
+  padding-left: 143px;
 }
