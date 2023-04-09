@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body class="page__body">
+<body class="page-body">
   <div class="page-container">
     <header class="main-header">
       <a class="main-header__link">
@@ -46,36 +44,30 @@
       <section class="form">
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-group introduce">
-            <legend class="form-group__title">Представьтесь:</legend>
-            <label class="name text-format">Имя*:
-              <input class="name-input" type="text" placeholder="Петр" required>
+          <div class="form__group">
+            <p class="form__group-title">Представьтесь:</p>
+            <label class="form__group-label">Имя*:
+              <input class="form__group-input name-input" type="text" placeholder="Петр" required>
             </label>
-            <label class="surname text-format">Фамилия*:
-              <input class="surname-input" type="text" placeholder="Пустота" required>
+            <label class="form__group-label">Фамилия*:
+              <input class="form__group-input surname-input" type="text" placeholder="Пустота" required>
             </label>
-            <label class="middle-name text-format">Отчество:
-              <input class="middle-name-input" type="text" placeholder="Викторович">
+            <label class="form__group-label">Отчество:
+              <input class="form__group-input middle-name-input" type="text" placeholder="Викторович">
             </label>
-          </fieldset>
-          <fieldset class="form-group contacts">
-            <legend class="form-group__title">Контактная информация:</legend>
-            <div class="phone">
-              <label class="phone__label text-format">
-                <span class="text-mobile">Контактный телефон*:</span>
-                <input class="phone-input" type="tel" placeholder="Введите телефон" required>
+          </div>
+          <div class="form__group">
+            <p class="form__group__title">Контактная информация:</p>
+              <label class="form__group-label">Контактный телефон*:
+                <input class="form__group-input phone-input" type="tel" placeholder="Введите телефон" required>
               </label>
-            </div>
-            <div class="e-mail">
-              <label class="e-mail__label text-format">
-                <span class="text-mobile">Электронная почта*:</span>
-                <input class="e-mail-input" type="email" placeholder="Введите e-mail" required>
+              <label class="form__group-label">Электронная почта*:
+                <input class="form__group-input e-mail-input" type="email" placeholder="Введите e-mail" required>
               </label>
-            </div>
-          </fieldset>
-          <fieldset class="form-group impression">
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <ul class="form__group-list reset-list">
+          </div>
+          <div class="form__group impression">
+            <p class="form__group-title">Ваше общее впечатление:</p>
+            <ul class="form__group-list form-list">
               <li class="form__impression-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="impression" value="positive" checked>
@@ -98,10 +90,10 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <div class="form-group sightseeing">
-            <label class="form-group__title sightseeing__title">Посещенные достопримечательности:</label>
-            <ul class="form-group-list reset-list">
+          </div>
+          <div class="form__group sightseeing">
+            <p class="form__group-title sightseeing__title">Посещенные достопримечательности:</p>
+            <ul class="form-group-list form-list">
               <li class="form__sightseeing-item sightseeing-item__bridge">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="Devils-bridge" checked>
@@ -132,12 +124,12 @@
               </li>
             </ul>
           </div>
-          <fieldset class="form-group emotion">
-            <legend class="form-group__title">Опишите свои эмоции:</legend>
+          <div class="form__group emotion">
+            <p class="form__group-title">Опишите свои эмоции:</p>
             <label class="form-group__field">
               <textarea class="emotion__text" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
-          </fieldset>
+          </div>
           <div class="button-feedback">
             <button class="button-feedback__background" type="submit">Отправить отзыв</button>
             <small class="review__legend">* — обязательные поля</small>

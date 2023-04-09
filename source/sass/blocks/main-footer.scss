@@ -22,3 +22,7 @@
   margin: 0;
   padding-top: 7px;
 }
+
+.social-list {
+  @include reset;
+}

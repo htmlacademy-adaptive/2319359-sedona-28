@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.advantages-list {
+  @include reset;
+}
+
 .advantages__item {
   color: #ffffff;
   text-align: center;
@@ -93,6 +97,10 @@
   padding: 23px 18px 46px;
   text-transform: uppercase;
   color: #333333;
+}
+
+.features-list {
+  @include reset;
 }
 
 .features__title {
