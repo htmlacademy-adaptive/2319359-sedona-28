@@ -43,11 +43,11 @@
   margin: 0;
 }
 
-.gallery__like-sum {
+.gallery-item__sum {
   color: #000000;
   padding-top: 16px;
 }
 
-.gallery-list {
+.gallery__list {
   @include reset;
 }

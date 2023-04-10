@@ -1,6 +1,9 @@
 @import "global/fonts.scss";
-@import "global/page.scss";
 @import "global/variables.scss";
+@import "global/button.scss";
+@import "global/mixin.scss";
+@import "global/base.scss";
+@import "blocks/page.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/main-container.scss";
@@ -15,3 +18,4 @@
 @import "blocks/form.scss";
 @import "blocks/review.scss";
 @import "blocks/page-container.scss";
+@import "blocks/features.scss";

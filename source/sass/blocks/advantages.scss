@@ -1,10 +1,10 @@
-.advantages-block {
+.advantages__block {
   padding-top: 32px;
   padding-left: 18px;
   padding-right: 18px;
 }
 
-.advantages-block__title {
+.advantages__block-title {
   font-weight: 700;
   line-height: 26px;
   font-size: 18px;
@@ -13,7 +13,7 @@
   margin: 0;
 }
 
-.advantages-block__text {
+.advantages__block-text {
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
@@ -24,10 +24,10 @@
 
 .advantages__list {
   text-align: center;
-}
 
-.advantages-list {
-  @include reset;
+  &.advantages__list {
+    @include reset;
+  }
 }
 
 .advantages__item {
@@ -54,28 +54,32 @@
   margin: 0;
 }
 
-.advantages__item--city {
+.advantages__content--city {
   padding: 54px 18px 40px;
-}
-
-.advantages__item--bridge {
-  padding: 37px 18px;
-}
-
-.advantages__item--square {
-  padding: 24px 26px;
-}
-
-.advantages__item--road {
-  padding: 24px 41px;
-}
-
-.advantages__item--tourists {
-  padding: 24px 18px 28px;
-}
-
-.advantages-item__content {
   background-color: #81b3d2;
+}
+
+.advantages__content--bridge {
+  padding: 37px 18px;
+  background-color: #81b3d2;
+}
+
+.advantages__content--square {
+  padding: 24px 26px;
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.advantages__content--road {
+  padding: 24px 41px;
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.advantages__content--tourists {
+  padding: 24px 18px 28px;
+  background-color: #eeeeee;
+  color: #333333;
 }
 
 .advantages__photo {
@@ -84,44 +88,6 @@
   background-color: #3b6689;
 }
 
-.advantages-item {
-  background-color: #eeeeee;
-  color: #333333;
-}
-
-.advantages-title {
+.advantages__title--dark {
   color: #000000;
-}
-
-.features__list {
-  padding: 23px 18px 46px;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.features-list {
-  @include reset;
-}
-
-.features__title {
-  margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  padding: 8px 0 16px;
-}
-
-.features__item {
-  padding-left: 47px;
-  text-align: left;
-  padding-bottom: 25px;
-}
-
-.features__item:last-child {
-  padding-bottom: 0;
-}
-
-.features__text {
-  margin: 0;
 }

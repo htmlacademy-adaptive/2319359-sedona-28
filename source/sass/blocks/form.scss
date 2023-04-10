@@ -1,37 +1,42 @@
 .form {
-  padding: 24px 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.form-list {
+.form__group-list {
   @include reset;
 }
 
-.form-group {
+.form__group {
   margin: 0;
   padding: 0;
   border: none;
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 39px;
+  padding-bottom: 23px;
 }
 
-.form-group__title {
+.form__group:last-child {
+  padding-bottom: 0;
+}
+
+.form__group-title {
   line-height: 26px;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 20px;
+  padding-top: 24px;
   font-weight: 700;
 }
 
-.form-group__label {
+.form__group-label {
   text-transform: uppercase;
   margin: 0;
   padding-left: 16px;
 }
 
-.form-group__input {
+.form__group-input {
   width: 280px;
   height: 58px;
   background-color: #f2f2f2;
@@ -49,23 +54,25 @@
   }
 }
 
-.contacts-input {
-  opacity: 30%;
+.form__group-input--contacts {
+  &::placeholder {
+    opacity: 30%;
+  }
 }
 
-.form-group__item {
+.form__group-item {
   height: 46px;
-  align-items: center;
   display: flex;
   padding-bottom: 16px;
+  align-items: center;
 }
 
-.control {
+.form__control {
   position: relative;
   padding-left: 62px;
 }
 
-.control-mark {
+.form__control-mark {
   position: absolute;
   left: 0;
   width: 46px;
@@ -75,7 +82,7 @@
   top: -10px;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.form__control-input[type="radio"]:checked + .form__control-mark::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -86,14 +93,14 @@
   content: "";
 }
 
-.control-label {
+.form__control-label {
   line-height: 26px;
   font-size: 18px;
   color: #000000;
   font-weight: 700;
 }
 
-.control-checkbox {
+.form__control-checkbox {
   position: absolute;
   left: 0;
   width: 46px;
@@ -103,11 +110,19 @@
   top: -10px;
 }
 
-.form-group__text {
+.form__group-emotion {
+  padding-top: 20px;
+  padding-bottom: 33px;
+}
+
+.form__group-text {
   min-width: 279px;
   min-height: 150px;
   background-color: #f2f2f2;
   border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
 
   &::placeholder {
     padding: 16px;
@@ -120,24 +135,15 @@
   }
 }
 
-.form-button__feedback {
-  font-family: "PT Sans", sans-serif;
-  background-color: #81b3d2;
-  color: #ffffff;
-  width: 280px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  cursor: pointer;
-}
-
-.form-button____text {
-  padding-top: 3px;
+.form__group-note {
   text-transform: uppercase;
   padding-left: 143px;
+  padding-top: 3px;
+  padding-bottom: 22px;
+  color: #333333;
+  opacity: 60%;
+}
+
+.form__group-title--emotion {
+  padding-left: 38px;
 }
