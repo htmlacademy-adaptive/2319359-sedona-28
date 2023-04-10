@@ -1,4 +1,4 @@
-.features__list {
+.features-list {
   padding: 23px 18px 46px;
   text-transform: uppercase;
   color: #333333;
@@ -8,7 +8,7 @@
   }
 }
 
-.features__title {
+.features-list__title {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
@@ -17,16 +17,16 @@
   padding: 8px 0 16px;
 }
 
-.features__item {
+.features-list__item {
   padding-left: 47px;
   text-align: left;
   padding-bottom: 25px;
 }
 
-.features__item:last-child {
+.features-list__item:last-child {
   padding-bottom: 0;
 }
 
-.features__text {
+.features-list__text {
   margin: 0;
 }
