@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page_body">
+<body class="page__body">
   <div class="page-container">
     <header class="main-header">
       <a class="main-header__link">
@@ -124,15 +124,13 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__group">
-            <label class="form__group-title form__group-title--emotion" for="text-letter">Опишите свои эмоции:</label>
-            <div class="form__group-emotion">
-              <textarea class="form__group-text" id="text-letter" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
+          <div class="form__block">
+            <label class="form__block-title" for="text-letter">Опишите свои эмоции:</label>
+              <textarea class="form__block-text" id="text-letter" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <div class="form__group">
-            <button class="form__group-button button" type="submit">Отправить отзыв</button>
-            <small class="form__group-note">* — обязательные поля</small>
+          <div class="form__button">
+            <button class="form__button-submit button" type="submit">Отправить отзыв</button>
+            <small class="form__button-note">* — обязательные поля</small>
           </div>
         </form>
       </section>
