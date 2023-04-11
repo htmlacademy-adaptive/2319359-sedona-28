@@ -12,28 +12,6 @@
   font-display: swap;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
-.button {
-  font-family: "PT Sans", sans-serif;
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding: 16px 5px;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  cursor: pointer;
-}
-
-.form__group-button {
-  width: 280px;
-}
-
-.hotel-search__button {
-  width: 284px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,7 +33,7 @@ img {
   height: 100%;
 }
 
-.page_body {
+.page__body {
   margin: 0;
   font-weight: 400;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -259,6 +237,10 @@ img {
   color: #333333;
 }
 
+.hotel-search__button {
+  width: 284px;
+}
+
 .map {
   min-width: 320px;
   min-height: 350px;
@@ -404,11 +386,7 @@ img {
   padding: 0;
   border: none;
   position: relative;
-  padding-bottom: 23px;
-}
-
-.form__group:last-child {
-  padding-bottom: 0;
+  padding-bottom: 24px;
 }
 
 .form__group-title {
@@ -499,12 +477,19 @@ img {
   top: -10px;
 }
 
-.form__group-emotion {
-  padding-top: 20px;
-  padding-bottom: 33px;
+.form__block-title {
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 38px;
+  line-height: 26px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
 }
 
-.form__group-text {
+.form__block-text {
   min-width: 279px;
   min-height: 150px;
   background-color: #f2f2f2;
@@ -513,7 +498,7 @@ img {
   padding: 0;
   display: block;
 }
-.form__group-text::placeholder {
+.form__block-text::placeholder {
   padding: 16px;
   font-weight: 700;
   line-height: 26px;
@@ -521,9 +506,11 @@ img {
   color: #000000;
   opacity: 30%;
   font-family: "PT Sans", sans-serif;
+  margin: 0;
+  display: block;
 }
 
-.form__group-note {
+.form__button-note {
   text-transform: uppercase;
   padding-left: 143px;
   padding-top: 3px;
@@ -532,8 +519,13 @@ img {
   opacity: 60%;
 }
 
-.form__group-title--emotion {
-  padding-left: 38px;
+.form__button {
+  width: 280px;
+  padding-top: 56px;
+}
+
+.form__button-submit {
+  width: 280px;
 }
 
 .review {
@@ -564,7 +556,7 @@ img {
   text-transform: uppercase;
   color: #333333;
 }
-.features-list.features__list {
+.features-list.features-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -591,5 +583,19 @@ img {
 
 .features-list__text {
   margin: 0;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 16px 5px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
