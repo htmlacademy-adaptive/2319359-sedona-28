@@ -1,0 +1,27 @@
+.presentation {
+  padding: 0 20px 0;
+}
+
+.presentation__title {
+  line-height: 26px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 17px;
+}
+
+.presentation__text {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 30px;
+  margin: 0;
+  padding-bottom: 38px;
+}
+
+.presentation__video {
+  min-width: 280px;
+  min-height: 177px;
+  background-color: #3b6689;
+}

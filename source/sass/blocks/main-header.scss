@@ -1,0 +1,13 @@
+.main-header {
+  position: relative;
+  height: 56px;
+}
+
+.main-header__link {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header__logo {
+  z-index: 2;
+}

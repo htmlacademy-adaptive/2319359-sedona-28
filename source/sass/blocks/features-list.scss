@@ -1,0 +1,32 @@
+.features-list {
+  padding: 23px 18px 46px;
+  text-transform: uppercase;
+  color: #333333;
+
+  &.features-list {
+    @include reset;
+  }
+}
+
+.features-list__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  padding: 8px 0 16px;
+}
+
+.features-list__item {
+  padding-left: 47px;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.features-list__item:last-child {
+  padding-bottom: 0;
+}
+
+.features-list__text {
+  margin: 0;
+}

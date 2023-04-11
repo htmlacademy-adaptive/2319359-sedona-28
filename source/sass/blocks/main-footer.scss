@@ -1,0 +1,29 @@
+.main-footer {
+  padding: 33px 82px;
+  text-align: center;
+}
+
+.main-footer__link {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.main-footer__social {
+  padding-top: 31px;
+  padding-bottom: 29px;
+  display: grid;
+}
+
+.main-footer__text {
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 7px;
+}
+
+.social-list {
+  @include reset;
+}
