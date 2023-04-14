@@ -1,6 +1,11 @@
 .main-footer {
   padding: 33px 82px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__link {

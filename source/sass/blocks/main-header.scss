@@ -1,13 +1,18 @@
 .main-header {
+  width: 100%;
   position: relative;
-  height: 56px;
-}
-
-.main-header__link {
-  display: flex;
-  justify-content: center;
+  z-index: 20;
+  background-color: #ffffff;
 }
 
 .main-header__logo {
-  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 185px;
+  height: 96px;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  background-color: #000000;
 }
