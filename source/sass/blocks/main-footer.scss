@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding: 100px 60px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 120px 36px;
   }
 }
 

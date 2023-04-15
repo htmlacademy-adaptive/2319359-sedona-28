@@ -2,6 +2,14 @@
   text-align: center;
   padding: 36px 20px 28px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 382px 68px;
+  }
 }
 
 .review__title {
@@ -9,6 +17,14 @@
   padding-bottom: 24px;
   line-height: 26px;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 31px;
+  }
 }
 
 .review__text {
