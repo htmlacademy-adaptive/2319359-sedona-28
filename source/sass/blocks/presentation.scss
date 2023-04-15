@@ -1,5 +1,13 @@
 .presentation {
-  padding: 0 20px 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+  }
 }
 
 .presentation__title {
@@ -9,6 +17,14 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+  }
 }
 
 .presentation__text {
@@ -24,4 +40,13 @@
   min-width: 280px;
   min-height: 177px;
   background-color: #3b6689;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+    min-height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
+  }
 }
