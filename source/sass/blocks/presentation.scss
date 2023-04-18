@@ -37,16 +37,11 @@
 }
 
 .presentation__video {
-  min-width: 280px;
+  width: 100%;
   min-height: 177px;
   background-color: #3b6689;
 
   @media (min-width: $tablet-width) {
-    min-width: 648px;
     min-height: 500px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 800px;
   }
 }

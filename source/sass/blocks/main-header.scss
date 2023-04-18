@@ -5,14 +5,12 @@
   background-color: #ffffff;
 }
 
-.main-header__logo {
+.main-header__link {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   width: 185px;
   height: 96px;
-  margin: 0;
-  padding: 0;
   z-index: 100;
   background-color: #000000;
 }
