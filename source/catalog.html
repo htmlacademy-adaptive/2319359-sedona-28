@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,55 +34,63 @@
     </header>
     <main class="main-container">
       <div class="intro-inner">
-        <img src="#" width="229" height="39" alt="Sedona">
+        <img class="intro-inner__image" src="#" width="229" height="39" alt="Sedona">
       </div>
       <section class="gallery">
         <h1 class="gallery__title">Фото и видео</h1>
         <p class="gallery__text"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
         <ul class="gallery__list">
-          <li class="gallery__item gallery-item">
+          <li class="gallery__item gallery__item--wide gallery-item">
             <a class="gallery-item__link" href="#">
-              <img class="gallery-item__image" src="#" width="280" height="280" alt="Non-native spaces">
+              <img class="gallery-item__image gallery-item__image--wide" src="#" width="280" height="280" alt="Дорога в закат">
             </a>
-            <h2 class="gallery-item__title">Неродные просторы</h2>
-            <p class="gallery-item__description">Автор фото: Борис</p>
-            <div class="gallery-item__like">
-              <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
-              <span class="gallery-item__sum">1350</span>
+            <div class="gallery-item__wrapper">
+              <h2 class="gallery-item__title">Неродные просторы</h2>
+              <p class="gallery-item__description">Автор фото: Борис</p>
+              <div class="gallery-item__like">
+                <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
+                <span class="gallery-item__sum">1350</span>
+              </div>
             </div>
           </li>
           <li class="gallery__item gallery-item">
             <a class="gallery-item__link" href="#">
-              <img class="gallery-item__image" src="#" width="280" height="280" alt="Local vegetation">
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Растительность">
             </a>
-            <h2 class="gallery-item__title">Местная растительность</h2>
-            <p class="gallery-item__description">Автор фото: Сергей</p>
-            <div class="gallery-item__like">
-              <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
-              <span class="gallery-item__sum">143</span>
+            <div class="gallery-item__wrapper">
+              <h2 class="gallery-item__title">Местная растительность</h2>
+              <p class="gallery-item__description">Автор фото: Сергей</p>
+              <div class="gallery-item__like">
+                <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
+                <span class="gallery-item__sum">143</span>
+              </div>
             </div>
           </li>
           <li class="gallery__item gallery-item">
             <a class="gallery-item__link" href="#">
-              <img class="gallery-item__image" src="#" width="280" height="280" alt="Local vegetation">
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Серпантин">
             </a>
-            <h2 class="gallery-item__title">Дорога на север</h2>
-            <p class="gallery-item__description">Автор фото: Петр</p>
-            <div class="gallery-item__like">
-              <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
-              <span class="gallery-item__sum">96</span>
+            <div class="gallery-item__wrapper">
+              <h2 class="gallery-item__title">Дорога на север</h2>
+              <p class="gallery-item__description">Автор фото: Петр</p>
+              <div class="gallery-item__like">
+                <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
+                <span class="gallery-item__sum">96</span>
+              </div>
             </div>
           </li>
           <li class="gallery__item gallery-item">
             <a class="gallery-item__link" href="#">
-              <img class="gallery-item__image" src="#" width="280" height="280" alt="Local vegetation">
+              <img class="gallery-item__image" src="#" width="280" height="280" alt="Каменный мост">
             </a>
-            <h2 class="gallery-item__title">Мост дьявола</h2>
-            <p class="gallery-item__description">Автор фото: Антон</p>
-            <div class="gallery-item__like">
-              <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
-              <span class="gallery-item__sum">254</span>
+            <div class="gallery-item__wrapper">
+              <h2 class="gallery-item__title">Мост дьявола</h2>
+              <p class="gallery-item__description">Автор фото: Антон</p>
+              <div class="gallery-item__like">
+                <button class="gallery-item__button" type="button" aria-label="Нравится"></button>
+                <span class="gallery-item__sum">254</span>
+              </div>
             </div>
           </li>
         </ul>

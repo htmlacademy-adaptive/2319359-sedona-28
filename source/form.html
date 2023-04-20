@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,7 +34,7 @@
     </header>
     <main class="main-container">
       <div class="intro-inner">
-        <img src="#" width="229" height="39" alt="Sedona">
+        <img class="intro-inner__image" src="#" width="229" height="39" alt="Sedona">
       </div>
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
@@ -44,30 +45,37 @@
       <section class="form">
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__group">
-            <legend class="form__group-title">Представьтесь:</legend>
-            <label class="form__group-label">Имя*:
-              <input class="form__group-input" type="text" placeholder="Петр" required>
-            </label>
-            <label class="form__group-label">Фамилия*:
-              <input class="form__group-input" type="text" placeholder="Пустота" required>
-            </label>
-            <label class="form__group-label">Отчество:
-              <input class="form__group-input" type="text" placeholder="Викторович">
-            </label>
-          </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__group-title">Контактная информация:</legend>
-              <label class="form__group-label">Контактный телефон*:
+          <div class="form__wrapper">
+            <fieldset class="form__group">
+              <legend class="form__group-title">Представьтесь:</legend>
+              <label class="form__group-label">
+                <span class="form__group-name">Имя*:</span>
+                <input class="form__group-input" type="text" placeholder="Петр" required>
+              </label>
+              <label class="form__group-label">
+                <span class="form__group-name">Фамилия*:</span>
+                <input class="form__group-input" type="text" placeholder="Пустота" required>
+              </label>
+              <label class="form__group-label">
+                <span class="form__group-name">Отчество:</span>
+                <input class="form__group-input" type="text" placeholder="Викторович">
+              </label>
+            </fieldset>
+            <fieldset class="form__group">
+              <legend class="form__group-title">Контактная информация:</legend>
+              <label class="form__group-label">
+                <span class="form__group-name">Контактный телефон*:</span>
                 <input class="form__group-input form__group-input--contacts" type="tel" placeholder="Введите телефон" required>
               </label>
-              <label class="form__group-label">Электронная почта*:
+              <label class="form__group-label">
+                <span class="form__group-name">Электронная почта*:</span>
                 <input class="form__group-input form__group-input--contacts" type="email" placeholder="Введите e-mail" required>
               </label>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="form__group">
             <legend class="form__group-title">Ваше общее впечатление:</legend>
-            <ul class="form__group-list">
+            <ul class="form__group-list form__group-list--radio">
               <li class="form__group-item">
                 <label class="form__control">
                   <input class="visually-hidden form__control-input" type="radio" name="impression" value="positive" checked>
@@ -93,7 +101,7 @@
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__group-title">Посещенные достопримечательности:</legend>
-            <ul class="form__group-list">
+            <ul class="form__group-list form__group-list--checkbox">
               <li class="form__group-item">
                 <label class="form__control">
                   <input class="visually-hidden form__control-input" type="checkbox" name="Devils-bridge" checked>

@@ -2,9 +2,15 @@
   padding: 23px 18px 46px;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
+  list-style: none;
 
-  &.features-list {
-    @include reset;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    flex-direction: row;
+    padding: 0;
   }
 }
 
@@ -21,6 +27,20 @@
   padding-left: 47px;
   text-align: left;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 100%;
+    min-height: 210px;
+    padding: 150px 33px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 100%;
+    min-height: 192px;
+    padding: 166px 50px 0;
+  }
 }
 
 .features-list__item:last-child {

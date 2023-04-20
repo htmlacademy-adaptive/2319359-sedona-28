@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,7 +35,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Сайт о туристическом городке Седона</h1>
       <div class="intro-index">
-        <img src="#" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the grand canyon sucks!">
+        <img class="intro-index__image" src="#" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the grand canyon sucks!">
       </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
@@ -43,56 +44,50 @@
           <p class="advantages__block-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <ol class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-photo">
             <div class="advantages__content advantages__content--city">
               <h4 class="advantages__title">Настоящий городок</h4>
               <p class="advantages__number">-№1-</p>
               <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__photo" src="#" width="320" height="260" alt="Фото настоящего городка">
+            <img class="advantages__photo" src="#" alt="Фото настоящего городка">
               <ul class="features-list">
                 <li class="features-list__item features-list__item--house">
                   <h4 class="features-list__title">Жилье</h4>
                   <p class="features-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="features-list__item features-list__item--souvenirs">
+                  <h4 class="features-list__title">Еда</h4>
+                  <p class="features-list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="features-list__item features-list__item--food">
                   <h4 class="features-list__title">Сувениры</h4>
                   <p class="features-list__text">Не только китайского, но и местного производства!</p>
                 </li>
-                <li class="features-list__item features-list__item--food">
-                  <h4 class="features-list__title">Еда</h4>
-                  <p class="features-list__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-                </li>
               </ul>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-photo">
             <div class="advantages__content advantages__content--bridge">
               <h4 class="advantages__title ">Там есть мост дьявола</h4>
               <p class="advantages__number">-№2-</p>
               <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages__photo" src="#" width="320" height="260" alt=" Фото Гранд-Каньона">
+            <img class="advantages__photo advantages__photo--bridge" src="#" alt=" Фото Гранд-Каньона">
           </li>
-          <li class="advantages__item">
-            <div class="advantages__content advantages__content--square">
+          <li class="advantages__item advantages__item--square">
               <h4 class="advantages__title advantages__title--dark">Небольшая площадь</h4>
               <p class="advantages__number">-№3-</p>
               <p class="advantages__text">Все интересные места находятся очень близко</p>
-            </div>
           </li>
-          <li class="advantages__item">
-            <div class="advantages__content advantages__content--road">
+          <li class="advantages__item advantages__item--road">
               <h4 class="advantages__title advantages__title--dark">Красивая дорога</h4>
               <p class="advantages__number">-№4-</p>
               <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
           </li>
-          <li class="advantages__item">
-            <div class="advantages__content advantages__content--tourists">
+          <li class="advantages__item advantages__item--tourists">
               <h4 class="advantages__title advantages__title--dark">Мало туристов</h4>
               <p class="advantages__number">-№5-</p>
               <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
           </li>
         </ol>
         <section class="hotel-search">
@@ -107,7 +102,7 @@
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
           <div class="map__search">
-            <img src="#" width="320" height="350" alt="Карта для поиска гостиниц в Седоне">
+            <img class="map__search-image" src="#" width="320" height="350" alt="Карта для поиска гостиниц в Седоне">
           </div>
         </section>
     </main>
