@@ -23,6 +23,16 @@
       left: calc(50% - 3px);
       top: calc(50% - 169px);
     }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: #dbdbdb;
+      left: calc(50% - 12px);
+      top: calc(50% - 169px);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -112,9 +122,25 @@
 }
 
 .form__group-label {
+  @media (min-width: 321px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.form__group-name {
   text-transform: uppercase;
-  margin: 0;
   padding-left: 16px;
+
+  @media (min-width: 321px) and (max-width: $tablet-width) {
+    padding-right: 10px;
+  }
 }
 
 .form__group-input {
@@ -122,16 +148,21 @@
   height: 58px;
   background-color: #f2f2f2;
   border: none;
-  margin-bottom: 16px;
   padding: 16px;
   box-sizing: border-box;
   cursor: pointer;
+  margin-bottom: 16px;
 
   &::placeholder {
     line-height: 26px;
     font-size: 18px;
     color: #000000;
     font-weight: 700;
+  }
+
+  @media (min-width: 321px) {
+    margin-bottom: 0;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
@@ -230,6 +261,7 @@
 }
 
 .form__block-text {
+  width: 100%;
   min-width: 279px;
   min-height: 150px;
   background-color: #f2f2f2;
