@@ -20,7 +20,7 @@
       height: 100%;
       width: 1px;
       background-color: #dbdbdb;
-      left: calc(50% - 3px);
+      left: calc(50% - 1px);
       top: calc(50% - 169px);
     }
 
@@ -163,10 +163,6 @@
   @media (min-width: 321px) {
     margin-bottom: 0;
     width: 100%;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 295px;
   }
 
   @media (min-width: $desktop-width) {

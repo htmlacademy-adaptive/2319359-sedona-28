@@ -33,16 +33,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(5, 153px);
+    grid-template-columns: 1fr 1fr 153px 1fr 1fr;
     width: 100%;
     display: grid;
     background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    background-color: transparent;
-    grid-template-columns: repeat(5, 240px);
   }
 }
 
