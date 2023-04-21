@@ -6,16 +6,6 @@
   min-height: 56px;
 }
 
-.main-navigation__toggle {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .site-list {
   flex-direction: column;
   display: flex;
@@ -28,9 +18,9 @@
     @include reset;
   }
 
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
+  // @media (max-width: $tablet-width) {
+  //   display: none;
+  // }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 153px 1fr 1fr;
@@ -52,11 +42,34 @@
   text-align: center;
   display: block;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #ffffff30;
+    background-color: #5496bd;
+  }
+
   @media (min-width: $tablet-width) {
     color: #000000;
     box-shadow: none;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: #00000030;
+      background-color: transparent;
+    }
+
+    &--current {
+      color: #766357;
+    }
   }
 }
 
@@ -120,5 +133,105 @@
     min-width: 153px;
     box-sizing: border-box;
     background-color: transparent;
+  }
+}
+
+.main-navigation__toggle {
+  width: 23px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 4px;
+    top: 0;
+    right: 0;
+    background-color: #81b3d2;
+    box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+  }
+
+  &:hover::before {
+    background-color: #81b3d260;
+    box-shadow: 0 9px 0 0 #81b3d260, 0 18px 0 0 #81b3d260;
+  }
+
+  &:active::before {
+    background-color: #81b3d230;
+    box-shadow: 0 9px 0 0 #81b3d230, 0 18px 0 0 #81b3d230;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-navigation--closed .site-list {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation--nojs .site-list__item {
+    display: block;
+    background-color: #81b3d2;
+  }
+
+  .main-navigation--nojs .site-list {
+    position: static;
+    background-color: #81b3d2;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    top: 9px;
+    right: -2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
   }
 }
