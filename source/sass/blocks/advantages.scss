@@ -89,6 +89,7 @@
 }
 
 .advantages__content--city {
+  position: relative;
   padding: 54px 18px 40px;
   background-color: #81b3d2;
 
@@ -98,6 +99,21 @@
 
   @media (min-width: $desktop-width) {
     padding: 52px 50px 51px;
+  }
+
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 37px;
+      width: auto;
+      top: -16px;
+      left: 0;
+      right: 0;
+      background-image: url("/source/img/divider-secondary.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 

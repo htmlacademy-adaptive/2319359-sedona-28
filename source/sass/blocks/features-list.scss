@@ -23,23 +23,64 @@
   padding: 8px 0 16px;
 }
 
-.features-list__item {
-  padding-left: 47px;
-  text-align: left;
-  padding-bottom: 25px;
+.features-list__wrapper {
+  padding: 0 18px 0 65px;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
-    width: 100%;
-    min-height: 210px;
-    padding: 150px 33px 0;
+    padding: 150px 33px 64px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 170px 50px 71px;
+  }
+}
+
+.features-list__item {
+  position: relative;
+  text-align: left;
+  padding-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--house::before {
+    background-image: url("/source/img/icon-house.svg");
+  }
+
+  &--food::before {
+    background-image: url("/source/img/icon-food.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("/source/img/icon-souvenirs.svg");
+  }
+
+  @media (min-width: $tablet-width) {
     text-align: center;
-    width: 100%;
-    min-height: 192px;
-    padding: 166px 50px 0;
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 62px;
+      left: 50%;
+      translate: -50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 72px;
+    }
   }
 }
 
