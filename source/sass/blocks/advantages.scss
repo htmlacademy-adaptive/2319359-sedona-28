@@ -70,6 +70,7 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 11px;
 }
 
 .advantages__number {
@@ -78,6 +79,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 17px;
 }
 
 .advantages__text {
@@ -110,7 +113,7 @@
       top: -16px;
       left: 0;
       right: 0;
-      background-image: url("/source/img/divider-secondary.svg");
+      background-image: url("../img/divider-secondary.svg");
       background-repeat: no-repeat;
       background-position: center;
     }

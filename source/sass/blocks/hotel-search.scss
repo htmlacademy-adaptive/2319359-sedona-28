@@ -5,15 +5,15 @@
 
 .hotel-search__content {
   text-align: center;
-  padding: 0 11px 32px;
+  padding: 0 11px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 166px 44px;
+    padding: 0 166px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 382px 44px;
+    padding: 0 382px;
   }
 }
 
@@ -23,12 +23,17 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .hotel-search__text {
   margin: 0;
   color: #333333;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .hotel-search__button {

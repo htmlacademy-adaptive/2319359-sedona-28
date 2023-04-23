@@ -13,14 +13,11 @@
   width: 100%;
   gap: 1px;
   background-color: #81b3d2;
+  position: absolute;
 
   &.site-list {
     @include reset;
   }
-
-  // @media (max-width: $tablet-width) {
-  //   display: none;
-  // }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 153px 1fr 1fr;
@@ -202,6 +199,7 @@
   .main-navigation--nojs .site-list {
     position: static;
     background-color: #81b3d2;
+    display: block;
   }
 }
 

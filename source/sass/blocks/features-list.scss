@@ -20,11 +20,20 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  padding: 8px 0 16px;
+  padding-top: 8px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    padding: 0;
+  }
 }
 
-.features-list__wrapper {
-  padding: 0 18px 0 65px;
+.features-list__item {
+  position: relative;
+  text-align: left;
+  padding-bottom: 33px;
+  padding-left: 47px;
 
   @media (min-width: $tablet-width) {
     padding: 150px 33px 64px;
@@ -33,12 +42,6 @@
   @media (min-width: $desktop-width) {
     padding: 170px 50px 71px;
   }
-}
-
-.features-list__item {
-  position: relative;
-  text-align: left;
-  padding-bottom: 25px;
 
   &::before {
     content: "";
@@ -46,27 +49,26 @@
     width: 39px;
     height: 37px;
     top: 0;
-    left: 15px;
+    left: 0;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--house::before {
-    background-image: url("/source/img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
   }
 
   &--food::before {
-    background-image: url("/source/img/icon-food.svg");
+    background-image: url("../img/icon-food.svg");
   }
 
   &--souvenirs::before {
-    background-image: url("/source/img/icon-souvenirs.svg");
+    background-image: url("../img/icon-souvenirs.svg");
   }
 
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;
-    padding: 0;
 
     &::before {
       width: 80px;

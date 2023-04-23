@@ -201,7 +201,7 @@
 .form__control-input[type="checkbox"]:checked + .form__control-checkbox::before,
 .form__control-input[type="checkbox"]:checked + .form__control-checkbox::after {
   position: absolute;
-  background-image: url("/source/img/icon-tick.svg.svg");
+  background-image: url("../img/icon-tick.svg.svg");
   background-repeat: no-repeat;
   top: 15px;
   left: 12px;
@@ -363,13 +363,13 @@
 
   &-phone {
     &::after {
-      background-image: url("/source/img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
     }
   }
 
   &-mail {
     &::after {
-      background-image: url("/source/img/icon-mail.svg");
+      background-image: url("../img/icon-mail.svg");
     }
   }
 }
