@@ -15,13 +15,13 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .gallery__text {
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  padding-top: 30px;
   margin: 0;
   padding-bottom: 42px;
 
@@ -31,6 +31,18 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 64px;
+  }
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -56px;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
   }
 }
 
@@ -63,6 +75,18 @@
   @media (min-width: $desktop-width) {
     &--wide {
       grid-column: 1 / 4;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background-color: #e5e5e5;
     }
   }
 }
@@ -106,9 +130,22 @@
 .gallery-item__description {
   color: #333333;
   margin: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+}
+
+.gallery-item__like {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
   }
 }
 
@@ -120,6 +157,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -137,6 +178,10 @@
   @media (min-width: $desktop-width) {
     padding: 17px 20px 17px 25px;
     width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     box-sizing: border-box;
     bottom: 0;
     background-color: #00000030;
@@ -145,18 +190,15 @@
 }
 
 .gallery-item__button {
-  padding-top: 11px;
-  bottom: 25px;
-  right: 10px;
   display: flex;
   align-items: center;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    padding-top: 0;
+    justify-content: end;
   }
 }
 
