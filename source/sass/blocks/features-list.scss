@@ -87,7 +87,9 @@
 }
 
 .features-list__item:last-child {
-  padding-bottom: 0;
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+  }
 }
 
 .features-list__text {

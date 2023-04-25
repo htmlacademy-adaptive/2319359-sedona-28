@@ -25,6 +25,7 @@
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  width: 136px;
 }
 
 .social-list {
@@ -32,6 +33,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px;
+  width: 156px;
 
   @include reset;
 }
