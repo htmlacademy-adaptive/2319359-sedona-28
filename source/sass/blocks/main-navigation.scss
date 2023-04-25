@@ -2,7 +2,7 @@
   display: flex;
   z-index: 100;
   min-width: 320px;
-  position: relative;
+  position: static;
   min-height: 56px;
 }
 
@@ -185,6 +185,10 @@
 @media (max-width: 767px) {
   .main-navigation--closed .site-list {
     display: none;
+  }
+
+  .main-navigation--opened .main-header__link {
+    z-index: 0;
   }
 
   .main-navigation--nojs {
