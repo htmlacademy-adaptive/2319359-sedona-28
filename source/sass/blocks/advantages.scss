@@ -21,6 +21,15 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 35px;
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .advantages__block-text {
@@ -70,6 +79,7 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 11px;
 }
 
 .advantages__number {
@@ -78,6 +88,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 17px;
 }
 
 .advantages__text {
@@ -89,7 +101,8 @@
 }
 
 .advantages__content--city {
-  padding: 54px 18px 40px;
+  position: relative;
+  padding: 71px 18px 40px;
   background-color: #81b3d2;
 
   @media (min-width: $tablet-width) {
@@ -98,6 +111,23 @@
 
   @media (min-width: $desktop-width) {
     padding: 52px 50px 51px;
+  }
+
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 37px;
+      width: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-image: url("../img/divider-secondary.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      clip-path: none;
+    }
   }
 }
 
@@ -124,6 +154,7 @@
   padding: 24px 26px;
   background-color: #eeeeee;
   color: #333333;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 41px 33px 63px;
@@ -133,12 +164,25 @@
   @media (min-width: $desktop-width) {
     padding: 52px 50px;
   }
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 18px;
+      left: 18px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
+  }
 }
 
 .advantages__item--road {
   padding: 24px 41px;
   background-color: #eeeeee;
   color: #333333;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 41px 33px;
@@ -148,12 +192,25 @@
   @media (min-width: $desktop-width) {
     padding: 52px 50px;
   }
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 18px;
+      left: 18px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
+  }
 }
 
 .advantages__item--tourists {
   padding: 24px 18px 28px;
   background-color: #eeeeee;
   color: #333333;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 41px 33px 63px;
@@ -162,6 +219,18 @@
 
   @media (min-width: $desktop-width) {
     padding: 52px 50px;
+  }
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 18px;
+      left: 18px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
   }
 }
 
