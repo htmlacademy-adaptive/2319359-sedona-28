@@ -4,7 +4,11 @@
   background-position: center;
   background-color: #81b3d2;
   background-size: 100% 100%;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-index-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-index-mobile@2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -21,6 +25,20 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    background-image: url("../img/background-index-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-index-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-image: url("../img/background-index-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-index-desktop@2x.jpg");
+    }
   }
 }
 
