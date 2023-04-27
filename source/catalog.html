@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <div class="page-container">
@@ -44,8 +48,16 @@
         </div>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--wide gallery-item">
-            <a class="gallery-item__link" href="img/gallery-sunset.jpg">
-              <img class="gallery-item__image gallery-item__image--wide" src="img/gallery-sunset.jpg" width="280" height="280" alt="Дорога в закат">
+            <a class="gallery-item__link" href="img/gallery-sunset-desktop.jpg">
+              <picture class="gallery-item__image">
+                <source media="(min-width: 1200px)"
+                srcset="img/gallery-sunset-desktop.jpg 1x, img/gallery-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/gallery-sunset-tablet.jpg 1x, img/gallery-sunset-tablet@2x.jpg 2x">
+                <img class="gallery-item__photo gallery-item__photo--wide" src="img/gallery-sunset-mobile.jpg"
+                srcset="img/gallery-sunset-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Дорога в закат">
+              </picture>
             </a>
             <div class="gallery-item__wrapper">
               <div class="gallery-item__description">
@@ -63,8 +75,16 @@
             </div>
           </li>
           <li class="gallery__item gallery-item">
-            <a class="gallery-item__link" href="img/gallery-cactus.jpg">
-              <img class="gallery-item__image" src="img/gallery-cactus.jpg" width="280" height="280" alt="Растительность">
+            <a class="gallery-item__link" href="img/gallery-cactus-desktop.jpg">
+              <picture class="gallery-item__image">
+                <source media="(min-width: 1200px)"
+                srcset="img/gallery-cactus-desktop.jpg 1x, img/gallery-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/gallery-cactus-tablet.jpg 1x, img/gallery-cactus-tablet@2x.jpg 2x">
+                <img class="gallery-item__photo" src="img/gallery-cactus-mobile.jpg"
+                srcset="img/gallery-cactus-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Растительность">
+              </picture>
             </a>
             <div class="gallery-item__wrapper">
               <div class="gallery-item__description">
@@ -82,8 +102,16 @@
             </div>
           </li>
           <li class="gallery__item gallery-item">
-            <a class="gallery-item__link" href="img/gallery-forest.jpg">
-              <img class="gallery-item__image" src="img/gallery-forest.jpg" width="280" height="280" alt="Серпантин">
+            <a class="gallery-item__link" href="img/gallery-forest-desktop.jpg">
+              <picture class="gallery-item__image">
+                <source media="(min-width: 1200px)"
+                srcset="img/gallery-forest-desktop.jpg 1x, img/gallery-forest-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/gallery-forest-tablet.jpg 1x, img/gallery-forest-tablet@2x.jpg 2x">
+                <img class="gallery-item__photo" src="img/gallery-forest-mobile.jpg"
+                srcset="img/gallery-forest-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Серпантин">
+              </picture>
             </a>
             <div class="gallery-item__wrapper">
               <div class="gallery-item__description">
@@ -101,8 +129,16 @@
             </div>
           </li>
           <li class="gallery__item gallery-item">
-            <a class="gallery-item__link" href="img/gallery-rocks.jpg">
-              <img class="gallery-item__image" src="img/gallery-rocks.jpg" width="280" height="280" alt="Каменный мост">
+            <a class="gallery-item__link" href="img/gallery-rocks-desktop.jpg">
+              <picture class="gallery-item__image">
+                <source media="(min-width: 1200px)"
+                srcset="img/gallery-rocks-desktop.jpg 1x, img/gallery-rocks-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                srcset="img/gallery-rocks-tablet.jpg 1x, img/gallery-rocks-tablet@2x.jpg 2x">
+                <img class="gallery-item__photo" src="img/gallery-forest-mobile.jpg"
+                srcset="img/gallery-rocks-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Каменный мост">
+              </picture>
             </a>
             <div class="gallery-item__wrapper">
               <div class="gallery-item__description">
@@ -125,7 +161,15 @@
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="presentation__wrapper">
-          <img class="presentation__video" src="img/video-image.jpg" width="280" height="177" alt="Видеопрезентация Седона"></img>
+          <picture>
+            <source media="(min-width: 1200px)"
+            srcset="img/gallery-video-desktop.jpg 1x, img/gallery-video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="img/gallery-video-tablet.jpg 1x, img/gallery-video-tablet@2x.jpg 2x">
+            <img class="presentation__video" src="img/gallery-video-mobile.jpg"
+            srcset="img/gallery-video-mobile@2x.jpg 2x" width="280" height="177"
+            alt="Видеопрезентация Седона">
+          </picture>
           <button class="presentation__button" type="button"></button>
         </div>
       </section>

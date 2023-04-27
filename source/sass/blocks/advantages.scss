@@ -235,8 +235,8 @@
 }
 
 .advantages__photo {
-  width: 100%;
-  min-height: 260px;
+  min-width: 100%;
+  min-height: 100%;
   background-color: #3b6689;
 
   @media (min-width: $tablet-width) {
@@ -258,5 +258,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__image {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
   }
 }
