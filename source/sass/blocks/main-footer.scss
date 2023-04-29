@@ -55,4 +55,10 @@
 
 .social-list__svg {
   padding: 12px;
+  fill: #ffffff;
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
