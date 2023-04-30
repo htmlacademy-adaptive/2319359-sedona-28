@@ -217,11 +217,12 @@
 }
 
 .gallery-item__icon {
-  fill: #ffffff;
+  fill: #000000;
+  opacity: 0.3;
 
-  @media (max-width: $desktop-width) {
-    fill: #000000;
-    opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
   }
 }
 
