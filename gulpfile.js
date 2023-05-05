@@ -74,24 +74,25 @@ export const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-export const sprite = () => {
-  return gulp.src('source/img/sprite.svg')
-    .pipe(svgstore({
-      inLineSvg: true
-    }))
-    // .pipe(svgo())
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
-}
+// export const sprite = () => {
+//   return gulp.src('source/img/sprite.svg')
+//     .pipe(svgstore({
+//       inLineSvg: true
+//     }))
+//     // .pipe(svgo())
+//     .pipe(rename('sprite.svg'))
+//     .pipe(gulp.dest('build/img'));
+// }
 
 // Copy
 
-const copy = (done) => {
+export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
-    'source/img/favicons/*.svg'
+    'source/img/favicons/*.svg',
+    'source/img/sprite.svg'
   ], {
     base: 'source'
   })
@@ -145,7 +146,6 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
 );
@@ -161,7 +161,6 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
   gulp.series(
