@@ -10,7 +10,6 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 
 // Styles
@@ -41,7 +40,8 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
@@ -73,16 +73,6 @@ export const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/sprite.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
-
-// export const sprite = () => {
-//   return gulp.src('source/img/sprite.svg')
-//     .pipe(svgstore({
-//       inLineSvg: true
-//     }))
-//     // .pipe(svgo())
-//     .pipe(rename('sprite.svg'))
-//     .pipe(gulp.dest('build/img'));
-// }
 
 // Copy
 
@@ -130,9 +120,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles, reload));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
