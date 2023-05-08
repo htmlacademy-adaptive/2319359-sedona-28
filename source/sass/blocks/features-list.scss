@@ -20,35 +20,28 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  padding-top: 8px;
   margin-bottom: 16px;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    font-size: 21px;
     padding: 0;
+    margin-bottom: 23px;
   }
 }
 
 .features-list__item {
   position: relative;
   text-align: left;
-  padding-bottom: 33px;
+  padding-bottom: 25px;
   padding-left: 47px;
-
-  @media (min-width: $tablet-width) {
-    padding: 150px 33px 64px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 170px 50px 71px;
-  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 39px;
-    height: 37px;
-    top: 0;
+    width: 40px;
+    height: 39px;
+    top: -5px;
     left: 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,20 +62,58 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;
+    width: 256px;
 
     &::before {
       width: 80px;
       height: 80px;
-      top: 62px;
+      top: 55px;
       left: 50%;
       translate: -50%;
+    }
+
+    &--souvenirs::before {
+      top: 60px;
+      left: 51%;
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 400px;
+
     &::before {
       top: 72px;
     }
+  }
+}
+
+.features-list__item--house {
+  @media (min-width: $tablet-width) {
+    padding: 158px 33px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 169px 50px 69px;
+  }
+}
+
+.features-list__item--food {
+  @media (min-width: $tablet-width) {
+    padding: 156px 33px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 166px 50px 71px;
+  }
+}
+
+.features-list__item--souvenirs {
+  @media (min-width: $tablet-width) {
+    padding: 153px 33px 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 50px 67px;
   }
 }
 
@@ -94,4 +125,46 @@
 
 .features-list__text {
   margin: 0;
+}
+
+.features-list__text--mobile {
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.features-list__text--tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.features-list__text--desktop {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
