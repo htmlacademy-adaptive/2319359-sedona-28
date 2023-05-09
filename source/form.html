@@ -42,15 +42,15 @@
       </div>
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
-        <p class="review__text">Помогите нашим отелям стать лучше!Оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях
-        </p>
+        <p class="review__text review__text--mobile">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+        <p class="review__text review__text--tablet">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях</p>
+        <p class="review__text review__text--desktop">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="form__wrapper">
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--fio">
               <legend class="form__group-title">Представьтесь:</legend>
               <label class="form__group-label">
                 <span class="form__group-name">Имя*:</span>
@@ -65,7 +65,7 @@
                 <input class="form__group-input" type="text" placeholder="Викторович">
               </label>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--contacts">
               <legend class="form__group-title">Контактная информация:</legend>
               <label class="form__group-label form__group--icon form__group--icon-phone">
                 <span class="form__group-name">Контактный телефон*:</span>
@@ -77,8 +77,8 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="form__group">
-            <legend class="form__group-title">Ваше общее впечатление:</legend>
+          <fieldset class="form__group form__group--impression">
+            <legend class="form__group-title form__group-title--decorated">Ваше общее впечатление:</legend>
             <ul class="form__group-list form__group-list--radio">
               <li class="form__group-item">
                 <label class="form__control">
@@ -94,7 +94,7 @@
                   <span class="form__control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="form__group-item">
+              <li class="form__group-item form__group-item--short">
                 <label class="form__control">
                   <input class="visually-hidden form__control-input" type="radio" name="impression" value="no-answer">
                   <span class="form__control-mark"></span>
@@ -103,8 +103,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__group-title">Посещенные достопримечательности:</legend>
+          <fieldset class="form__group form__group--places">
+            <legend class="form__group-title form__group-title--decor">Посещенные<br>достопримечательности:</legend>
             <ul class="form__group-list form__group-list--checkbox">
               <li class="form__group-item">
                 <label class="form__control">
