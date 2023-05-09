@@ -4,11 +4,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
+    padding-bottom: 55px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   padding: 0 382px;
-  // }
+  @media (min-width: $desktop-width) {
+    padding-top: 56px;
+    padding-bottom: 66px;
+  }
 }
 
 .hotel-search__content {
@@ -50,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 36px;
+    margin-bottom: 45px;
   }
 }
 

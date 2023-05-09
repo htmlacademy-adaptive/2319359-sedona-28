@@ -81,8 +81,12 @@
   @media (min-width: $desktop-width) {
     width: 400px;
 
+    &--souvenirs::before {
+      left: 50%;
+    }
+
     &::before {
-      top: 72px;
+      top: 66px;
     }
   }
 }

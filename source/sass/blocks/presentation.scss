@@ -59,6 +59,14 @@
 
 .presentation__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 84px;
+  }
 }
 
 .presentation__button {
@@ -74,6 +82,10 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 46%;
+  }
 }
 
 .presentation__text--mobile {
