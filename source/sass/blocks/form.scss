@@ -215,7 +215,7 @@
 }
 
 .form__group-title--decorated::after {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     content: " ";
     height: 1px;
@@ -247,7 +247,7 @@
 }
 
 .form__group-title--decor::after {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     content: " ";
     height: 1px;
@@ -298,9 +298,24 @@
   line-height: 26px;
   font-size: 18px;
   font-weight: 700;
+  color: #000000;
 
   &::placeholder {
-    color: #000000;
+    opacity: 60%;
+  }
+
+  &:hover {
+    background: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    border: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
   }
 
   @media (min-width: 321px) {
@@ -339,6 +354,7 @@
 .form__control {
   position: relative;
   padding-left: 62px;
+  cursor: pointer;
 }
 
 .form__control-mark {
@@ -346,9 +362,9 @@
   left: 0;
   width: 46px;
   height: 46px;
-  background-color: #f2f2f2;
   border-radius: 50%;
   top: -10px;
+  background-color: #f2f2f2;
 }
 
 .form__control-input[type="checkbox"]:checked + .form__control-checkbox::before,
@@ -363,6 +379,18 @@
   content: "";
 }
 
+.form__control-input[type="checkbox"]:hover + .form__control-checkbox {
+  background-color: #e5e5e5;
+}
+
+.form__control-input[type="checkbox"]:active + .form__control-checkbox {
+  background-color: #d5d5d5;
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .form__control-input[type="radio"]:checked + .form__control-mark::before,
 .form__control-input[type="radio"]:checked + .form__control-mark::after {
   position: absolute;
@@ -373,6 +401,18 @@
   background-color: #333333;
   border-radius: 50%;
   content: "";
+}
+
+.form__control-input[type="radio"]:hover + .form__control-mark {
+  background-color: #e5e5e5;
+}
+
+.form__control-input[type="radio"]:active + .form__control-mark {
+  background-color: #d5d5d5;
+
+  &::before {
+    opacity: 0.3;
+  }
 }
 
 .form__control-label {
@@ -438,6 +478,7 @@
   display: block;
   resize: none;
   box-sizing: border-box;
+  cursor: pointer;
 
   &::placeholder {
     display: block;
