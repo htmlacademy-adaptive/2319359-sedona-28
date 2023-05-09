@@ -88,6 +88,10 @@
   }
 }
 
+.advantages__title--dark {
+  color: #000000;
+}
+
 .advantages__title br {
   @media (max-width: 767px) {
     display: none;
@@ -300,10 +304,6 @@
     grid-column: span 2;
     max-height: 256px;
   }
-}
-
-.advantages__title--dark {
-  color: #000000;
 }
 
 .advantages__item-photo {
