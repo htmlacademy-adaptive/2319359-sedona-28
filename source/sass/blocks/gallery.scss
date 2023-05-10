@@ -120,6 +120,14 @@
   }
 }
 
+.gallery-item__description {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 209px;
+  }
+}
+
 .gallery-item__photo {
   background-color: #81b3d2;
   width: 100%;
