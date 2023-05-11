@@ -62,7 +62,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     margin: 0;
-    width: 256px;
+    width: 100%;
 
     &::before {
       width: 80px;
@@ -79,8 +79,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
-
     &--souvenirs::before {
       left: 50%;
     }
