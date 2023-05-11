@@ -59,10 +59,8 @@
       margin: 0 36px 48px;
 
       @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 16px 62px;
+        grid-auto-flow: column;
+        column-gap: 61px;
         margin: 0 0 56px;
         padding: 17px 53px;
       }
@@ -78,10 +76,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 16px 64px;
+      grid-auto-flow: column;
+      column-gap: 63px;
       padding: 31px 44px;
       margin: 0 0 56px;
     }
@@ -186,11 +182,12 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 24px;
   font-weight: 700;
   max-width: 238px;
+  display: grid;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -200,47 +197,15 @@
   }
 }
 
-.form__group-title--decorated::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: " ";
-    height: 1px;
-    top: 12px;
-    width: 123px;
-    left: 0;
-    background-color: #dbdbdb;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 280px;
-  }
-}
-
-.form__group-title--decorated::after {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: " ";
-    height: 1px;
-    top: 12px;
-    width: 123px;
-    right: 0;
-    background-color: #dbdbdb;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 280px;
-  }
-}
-
 .form__group-title--decor::before {
   @media (min-width: $tablet-width) {
+    content: "";
     position: absolute;
-    content: " ";
     height: 1px;
-    top: 25px;
     width: 123px;
     left: 0;
     background-color: #dbdbdb;
+    grid-column: 1/2;
   }
 
   @media (min-width: $desktop-width) {
@@ -250,13 +215,13 @@
 
 .form__group-title--decor::after {
   @media (min-width: $tablet-width) {
+    content: "";
     position: absolute;
-    content: " ";
     height: 1px;
-    top: 25px;
     width: 123px;
     right: 0;
     background-color: #dbdbdb;
+    grid-column: 3/-1;
   }
 
   @media (min-width: $desktop-width) {
@@ -318,16 +283,16 @@
 
   &:hover {
     background: #e5e5e5;
-    border: 4px solid #e5e5e5;
   }
 
   &:focus {
-    border: 4px solid #e5e5e5;
+    outline: 4px solid #e5e5e5;
   }
 
   &:active {
     background: #ffffff;
     border: 4px solid #e5e5e5;
+    outline: none;
   }
 
   @media (min-width: 321px) {
@@ -358,12 +323,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-  }
-
-  &--short {
-    @media (min-width: $desktop-width) {
-      padding-left: 5px;
-    }
   }
 }
 
@@ -502,6 +461,20 @@
     color: #000000;
     opacity: 30%;
     font-family: "PT Sans", sans-serif;
+  }
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
