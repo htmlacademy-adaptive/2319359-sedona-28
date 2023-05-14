@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="js/script.js" as="script">
   <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
@@ -63,13 +61,12 @@
               <p class="advantages__text advantages__text--desktop">Седона не аттракцион для туристов,<br>там течёт своя жизнь</p>
             </div>
             <picture class="advantages__image">
-              <source media="(min-width: 1200px)"
-              srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-              srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-              <img class="advantages__photo" src="img/photo-city-mobile.jpg"
-              srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260"
-              alt="Фото настоящего городка">
+              <source media="(min-width: 1200px)" type="img/webp" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="img/webp" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages__photo" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото настоящего городка">
             </picture>
             <ul class="features-list">
               <li class="features-list__item features-list__item--house">
@@ -101,13 +98,12 @@
               <p class="advantages__text advantages__text--desktop">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
             </div>
             <picture class="advantages__image advantages__image--bridge">
-              <source media="(min-width: 1280px)"
-              srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-              srcset="img/photo-city-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="advantages__photo advantages__photo--bridge" src="img/photo-bridge-mobile.jpg"
-              srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260"
-              alt=" Фото Гранд-Каньона">
+              <source media="(min-width: 1200px)" type="img/webp" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="img/webp" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__photo advantages__photo--bridge" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt=" Фото Гранд-Каньона">
             </picture>
           </li>
           <li class="advantages__item advantages__item--square">
