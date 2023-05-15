@@ -289,6 +289,7 @@
     background: #ffffff;
     border: 4px solid #e5e5e5;
     outline: none;
+    padding: 12px;
   }
 
   @media (min-width: 321px) {
@@ -355,10 +356,11 @@
   background-color: #e5e5e5;
 }
 
-.form__control-input[type="checkbox"]:active + .form__control-checkbox {
+.form__control-input[type="checkbox"]:focus + .form__control-checkbox {
   background-color: #d5d5d5;
 
-  &::before {
+  &::before,
+  &::after {
     opacity: 0.3;
   }
 }
@@ -379,10 +381,11 @@
   background-color: #e5e5e5;
 }
 
-.form__control-input[type="radio"]:active + .form__control-mark {
+.form__control-input[type="radio"]:focus + .form__control-mark {
   background-color: #d5d5d5;
 
-  &::before {
+  &::before,
+  &::after {
     opacity: 0.3;
   }
 }
