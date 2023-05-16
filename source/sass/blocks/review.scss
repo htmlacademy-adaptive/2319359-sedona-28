@@ -1,15 +1,15 @@
 .review {
   text-align: center;
-  padding: 36px 20px 0;
+  padding: 36px 10px 0;
   text-transform: uppercase;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 166px 0;
+    padding-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 382px 0;
+    padding-top: 115px;
   }
 
   @media (max-width: 767px) {
@@ -54,5 +54,47 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 68px;
+  }
+}
+
+.review__text--mobile {
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.review__text--tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.review__text--desktop {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

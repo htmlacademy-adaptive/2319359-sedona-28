@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -42,15 +44,15 @@
       </div>
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
-        <p class="review__text">Помогите нашим отелям стать лучше!Оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях
-        </p>
+        <p class="review__text review__text--mobile">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+        <p class="review__text review__text--tablet">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях</p>
+        <p class="review__text review__text--desktop">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
         <h2 class="visually-hidden">Форма отправки отзыва:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="form__wrapper">
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--fio">
               <legend class="form__group-title">Представьтесь:</legend>
               <label class="form__group-label">
                 <span class="form__group-name">Имя*:</span>
@@ -65,7 +67,7 @@
                 <input class="form__group-input" type="text" placeholder="Викторович">
               </label>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--contacts">
               <legend class="form__group-title">Контактная информация:</legend>
               <label class="form__group-label form__group--icon form__group--icon-phone">
                 <span class="form__group-name">Контактный телефон*:</span>
@@ -77,8 +79,8 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="form__group">
-            <legend class="form__group-title">Ваше общее впечатление:</legend>
+          <fieldset class="form__group form__group--impression">
+            <legend class="form__group-title form__group-title--decor">Ваше общее впечатление:</legend>
             <ul class="form__group-list form__group-list--radio">
               <li class="form__group-item">
                 <label class="form__control">
@@ -94,7 +96,7 @@
                   <span class="form__control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="form__group-item">
+              <li class="form__group-item form__group-item--short">
                 <label class="form__control">
                   <input class="visually-hidden form__control-input" type="radio" name="impression" value="no-answer">
                   <span class="form__control-mark"></span>
@@ -103,8 +105,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__group-title">Посещенные достопримечательности:</legend>
+          <fieldset class="form__group form__group--places">
+            <legend class="form__group-title form__group-title--decor">Посещенные<br>достопримечательности:</legend>
             <ul class="form__group-list form__group-list--checkbox">
               <li class="form__group-item">
                 <label class="form__control">
@@ -158,7 +160,7 @@
             </svg>
           </a>
         </li>
-        <li class="ssocial-list__item">
+        <li class="social-list__item">
           <a class="social-list__link social-list__link--telegram" href="#">
             <span class="visually-hidden">Telegram</span>
             <svg class="social-list__svg" width="24" height="24" aria-label="Перейти в Telegram канал">
@@ -185,6 +187,32 @@
         </a>
       </div>
     </footer>
+    <div class="main-modal modal modal--error">
+      <div class="modal__wrapper modal__wrapper--error">
+        <div class="modal__content-wrapper modal__content-wrapper--error">
+          <h3 class="modal__title modal__title--error">Что-то пошло<br>&nbsp;не так!</h3>
+          <p class="modal__message modal__message--mobile">Проверьте поля, выделенные<br>красным, скорее всего вы<br>забыли их заполнить</p>
+          <p class="modal__message modal__message--tablet">Проверьте поля, выделенные красным,<br>скорее всего вы забыли их заполнить</p>
+          <p class="modal__message modal__message--desktop">Проверьте поля, выделенные красным,<br>скорее всего вы забыли их заполнить</p>
+        </div>
+        <div class="modal__button-wrapper">
+          <button class="modal__button modal__button--error button" type="button">Ок</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-modal modal modal--sent">
+      <div class="modal__wrapper modal__wrapper--sent">
+        <div class="modal__content-wrapper modal__content-wrapper--sent">
+          <h3 class="modal__title modal__title--sent">Ваш отзыв отправлен!</h3>
+          <p class="modal__message modal__message--mobile">Спасибо за ваше участие, ваш<br>отзыв уже поступил к нам.<br>В ближайшее время мы<br>опубликуем его на сайте.</p>
+          <p class="modal__message modal__message--tablet">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal__message modal__message--desktop">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__button-wrapper modal__button-wrapper--sent">
+          <button class="modal__button modal__button--sent button" type="button">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>

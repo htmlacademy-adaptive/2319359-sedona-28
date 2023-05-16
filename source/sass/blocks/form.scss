@@ -1,7 +1,6 @@
 .form {
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,8 +29,8 @@
       height: 100%;
       width: 1px;
       background-color: #dbdbdb;
-      left: calc(50% - 12px);
-      top: calc(50% - 169px);
+      left: calc(50% - 1px);
+      top: calc(50% - 173px);
     }
   }
 
@@ -39,12 +38,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
-    margin-bottom: 63px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 50px;
-    margin-bottom: 71px;
+    margin-bottom: 56px;
   }
 }
 
@@ -60,10 +59,8 @@
       margin: 0 36px 48px;
 
       @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 16px 28px;
+        grid-auto-flow: column;
+        column-gap: 61px;
         margin: 0 0 56px;
         padding: 17px 53px;
       }
@@ -79,10 +76,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 16px 64px;
+      grid-auto-flow: column;
+      column-gap: 63px;
       padding: 31px 44px;
       margin: 0 0 56px;
     }
@@ -95,23 +90,89 @@
   position: relative;
   padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  &--fio {
+    @media (max-width: 767px) {
+      margin-bottom: 23px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -23px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background-color: #e5e5e5;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
+  &--contacts {
+    margin-bottom: 18px;
+
+    @media (max-width: 767px) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -18px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background-color: #e5e5e5;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-left: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 50px;
+    }
   }
 
-  @media (max-width: 767px) {
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      height: 1px;
-      background-color: #e5e5e5;
+  &--impression {
+    margin-bottom: 8px;
+
+    @media (max-width: 767px) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background-color: #e5e5e5;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &--places {
+    margin-bottom: 8px;
+
+    @media (max-width: 767px) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background-color: #e5e5e5;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -121,15 +182,50 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 24px;
   font-weight: 700;
+  max-width: 238px;
+  display: grid;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     margin-bottom: 28px;
     padding-top: 0;
-    width: 308px;
+    max-width: 295px;
+  }
+}
+
+.form__group-title--decor::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 123px;
+    left: 0;
+    background-color: #dbdbdb;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+  }
+}
+
+.form__group-title--decor::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 123px;
+    right: 0;
+    background-color: #dbdbdb;
+    grid-column: 3/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
   }
 }
 
@@ -149,9 +245,19 @@
 .form__group-name {
   text-transform: uppercase;
   padding-left: 16px;
+  max-width: 248px;
+  display: block;
 
   @media (min-width: 321px) and (max-width: $tablet-width) {
     padding-right: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 263px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 398px;
   }
 }
 
@@ -164,19 +270,35 @@
   padding-right: 60px;
   box-sizing: border-box;
   cursor: pointer;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   font: inherit;
   line-height: 26px;
   font-size: 18px;
   font-weight: 700;
+  color: #000000;
 
   &::placeholder {
-    color: #000000;
+    opacity: 60%;
+  }
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:focus {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+    outline: none;
+    padding: 12px;
   }
 
   @media (min-width: 321px) {
     margin-bottom: 0;
     width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 295px;
   }
 
   @media (min-width: $desktop-width) {
@@ -191,25 +313,21 @@
 }
 
 .form__group-item {
-  height: 46px;
+  min-height: 46px;
   display: flex;
   margin-bottom: 16px;
   align-items: center;
-}
 
-@media (max-width: 767px) {
-  .form__group-item:last-child {
-    margin-bottom: 24px;
-  }
-
-  .form__group-input:last-child {
-    margin-bottom: 34px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
 .form__control {
   position: relative;
   padding-left: 62px;
+  cursor: pointer;
+  max-width: 280px;
 }
 
 .form__control-mark {
@@ -217,9 +335,9 @@
   left: 0;
   width: 46px;
   height: 46px;
-  background-color: #f2f2f2;
   border-radius: 50%;
   top: -10px;
+  background-color: #f2f2f2;
 }
 
 .form__control-input[type="checkbox"]:checked + .form__control-checkbox::before,
@@ -234,6 +352,19 @@
   content: "";
 }
 
+.form__control-input[type="checkbox"]:hover + .form__control-checkbox {
+  background-color: #e5e5e5;
+}
+
+.form__control-input[type="checkbox"]:focus + .form__control-checkbox {
+  background-color: #d5d5d5;
+
+  &::before,
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 .form__control-input[type="radio"]:checked + .form__control-mark::before,
 .form__control-input[type="radio"]:checked + .form__control-mark::after {
   position: absolute;
@@ -244,6 +375,19 @@
   background-color: #333333;
   border-radius: 50%;
   content: "";
+}
+
+.form__control-input[type="radio"]:hover + .form__control-mark {
+  background-color: #e5e5e5;
+}
+
+.form__control-input[type="radio"]:focus + .form__control-mark {
+  background-color: #d5d5d5;
+
+  &::before,
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 .form__control-label {
@@ -288,10 +432,15 @@
   padding-top: 24px;
   display: block;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    font-size: 21px;
+    margin-bottom: 29px;
+  }
 }
 
 .form__block-text {
-  font: inherit;
   font-weight: 700;
   line-height: 26px;
   font-size: 18px;
@@ -304,12 +453,27 @@
   display: block;
   resize: none;
   box-sizing: border-box;
+  cursor: pointer;
 
   &::placeholder {
     display: block;
     color: #000000;
     opacity: 30%;
     font-family: "PT Sans", sans-serif;
+  }
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -329,20 +493,25 @@
   justify-content: end;
   color: rgba(51, 51, 51, 0.6);
   padding-right: 20px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     align-self: center;
     padding-right: 0;
+    font-size: 14px;
+    padding-top: 5px;
   }
 }
 
 .form__button {
   margin-top: 56px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
     margin-top: 48px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -370,7 +539,6 @@
 .form__group--icon {
   position: relative;
   display: flex;
-  flex-direction: column;
 
   &::after {
     content: "";
@@ -382,6 +550,14 @@
     background-color: #e6e6e6;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: 321px) and (max-width: 767px) {
+      top: 0;
+    }
+  }
+
+  @media (max-width: 320px) {
+    flex-direction: column;
   }
 
   &-phone {

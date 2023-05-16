@@ -1,5 +1,5 @@
 .presentation {
-  padding: 0 20px;
+  padding: 12px 20px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
@@ -17,10 +17,12 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 17px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
+    font-size: 30px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,11 +38,11 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 86px;
   }
 }
 
@@ -48,6 +50,7 @@
   min-width: 100%;
   min-height: 177px;
   background-color: #3b6689;
+  display: block;
 
   @media (min-width: $tablet-width) {
     min-height: 500px;
@@ -56,6 +59,14 @@
 
 .presentation__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 84px;
+  }
 }
 
 .presentation__button {
@@ -71,4 +82,50 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 46%;
+  }
+}
+
+.presentation__text--mobile {
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.presentation__text--tablet {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.presentation__text--desktop {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
