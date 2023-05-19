@@ -138,11 +138,15 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226088327253!2d30.314833977142438!3d59.96826597493004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1682084920886!5m2!1sru!2sru"
-          width="320"
-          height="350"
-          allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226088327253!2d30.314833977142438!3d59.96826597493004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1682084920886!5m2!1sru!2sru" width="320" height="350" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          <picture>
+            <source media="(min-width: 1200px)" type="img/webp" srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="img/webp" srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
+            <source type="img/webp" srcset="img/map-image-mobile.webp 1x, img/map-image-mobile@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/map-image-desktop.jpg 1x, img/map-image-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-image-tablet.jpg 1x, img/map-image-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map-image-mobile.jpg" srcset="img/map-image-mobile@2x.jpg 2x" width="320" height="350" alt="Карта">
+          </picture>
         </section>
       </section>
     </main>
