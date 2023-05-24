@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 767px) {
-  .main-navigation--closed .site-list {
+  .main-navigation--closed .main-navigation__list {
     display: none;
   }
 
@@ -68,19 +68,14 @@
     display: none;
   }
 
-  .main-navigation--nojs .site-list__item {
-    display: block;
-    background-color: #81b3d2;
-  }
-
-  .main-navigation--nojs .site-list {
+  .main-navigation--nojs .main-navigation__list {
     position: static;
     background-color: #81b3d2;
     display: block;
   }
 }
 
-.main-navigation--opened .site-list {
+.main-navigation--opened .main-navigation__list {
   position: absolute;
 }
 
